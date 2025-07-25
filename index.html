@@ -3,10 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Responsive Flowers</title>
+    <!-- font css -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .font-noto-serif {
+        font-family: "Noto Serif", serif;
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
+  <body class="max-w-[1280px] mx-auto px 4">
+    <!-- Navbar Section -->
+    <header class="max-w-7xl mx-auto px-4">
+      <nav class="flex items-center justify-between py-4">
+        <div>
+          <img src="assets/logo.png" alt="Logo image" />
+        </div>
+        <div class="flex items-center gap-6">
+          <div class="hidden md:flex items-center font-medium gap-6">
+            <a class="font-bold" href="#">Home</a>
+            <a class="text-[#8987A1]" href="#">Shop</a>
+            <a class="text-[#8987A1]" href="#">About Us</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart ($56)</span>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main></main>
     <footer></footer>
   </body>
